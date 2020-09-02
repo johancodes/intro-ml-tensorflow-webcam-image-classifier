@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<title>Webcam Image Classifier with MobileNet Pre-trained Machine Learning Model</title>
+
+<html>
+
+<head>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"></script>
+
+<style>
+
+    body {
+        font-family: Arial, Helvetica, sans-serif ;
+    }
+
+    #console, p {
+        margin: 0 auto;
+        text-align: center;
+        /*border: 1px solid;*/
+        max-width: 502px;
+     }
+
+     p {
+         margin: 10px 0px 5px 0px;
+         color: grey;
+         margin: 10px;
+     }
+
+    #container {
+        margin: 0 auto;
+        width: 500px;
+        height: 375px;
+        border: 1px #333 solid;
+    }
+
+    #videoElement {
+        width: 500px;
+        height: 375px;
+        background-color: #666;
+    }
+
+    #predictBtn {
+        padding: 20px;
+        color: white;
+        background-color:rgb(95, 164, 247);
+        width: 502px;
+        font-size: x-large;
+        font-weight: bold;
+        border: none;
+     }
+
+    #stopBtn {
+        padding: 10px;
+        margin: 10px ;
+        color: grey;
+        background-color: white;
+        border: 1px solid;
+    }
+
+    #classify {
+        /*border: 1px solid;*/
+        margin-top: 10px;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+    <div id="console">
+
+    <p>Let a pre-trained Tensorflow.js machine learning model, MobileNet, tell you what it's seeing. Allow webpage to use your webcam. Place an object in front of the camera and press the Predict! button. You can also press the spacebar to initiate the prediction.</p>
+
+    <div id="container">
+        <video autoplay="true" id="videoElement"></video>
+    </div>
+
+    <div>
+        <button id="stopBtn">Stop Video</button>
+    </div>
+
+    <div>
+        <button id="predictBtn">Predict!</button>
+    </div>
+
+   
+    <h2 id="classify"></h2>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
