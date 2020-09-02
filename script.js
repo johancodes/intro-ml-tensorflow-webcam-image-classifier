@@ -1,5 +1,5 @@
 
-/***** DERIVED FROM https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm *****/
+/***** ADAPTED FROM https://www.kirupa.com/html5/accessing_your_webcam_in_html5.htm *****/
 
 const predictBtn = document.getElementById("predictBtn");
 
