@@ -19,7 +19,7 @@
         margin: 0 auto;
         text-align: center;
         /*border: 1px solid;*/
-        max-width: 502px;
+        max-width: 660px;
      }
 
      p {
@@ -29,23 +29,21 @@
      }
 
     #container {
-        margin: 0 auto;
-        width: 500px;
-        height: 375px;
-        border: 1px #333 solid;
+        width: 660px;
+        /*border: 1px #333 solid;*/
     }
 
     #videoElement {
-        width: 500px;
-        height: 375px;
+        width: 660px;
         background-color: #666;
+        margin-top: 5px;
     }
 
     #predictBtn {
         padding: 20px;
         color: white;
         background-color:rgb(95, 164, 247);
-        width: 502px;
+        width: 660px;
         font-size: x-large;
         font-weight: bold;
         border: none;
@@ -53,7 +51,7 @@
 
     #stopBtn {
         padding: 10px;
-        margin: 10px ;
+        margin: 5px 0px 10px 0px;
         color: grey;
         background-color: white;
         border: 1px solid;
@@ -72,7 +70,7 @@
 
     <div id="console">
 
-    <p>Let a pre-trained Tensorflow.js machine learning model, MobileNet, tell you what it's seeing. Allow webpage to use your webcam. Place an object in front of the camera and press the Predict! button. You can also press the spacebar to initiate the prediction.</p>
+    <p>Let a pre-trained Tensorflow.js machine learning model, MobileNet, tell you what it's seeing. Allow webpage to use your webcam. Place an object in front of the camera and press the Predict! button. You can also press the spacebar to initiate the prediction. You can grab my code <a href="https://github.com/misterlimcodes/intro-ml-tensorflow-webcam-image-classifier">here.</a> Created by <a href="http://joellim.squarespace.com/">Joel Lim.</a></p>
 
     <div id="container">
         <video autoplay="true" id="videoElement"></video>
